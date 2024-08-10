@@ -11,8 +11,9 @@ class Solution {
         profit = Math.max(profit, sell - buy);
  
       }else{
-        start = end; 
+        start = end;
       }
+  
     }
     return profit; 
   }
