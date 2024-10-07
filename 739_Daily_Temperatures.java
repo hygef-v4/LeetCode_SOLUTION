@@ -12,6 +12,7 @@ class Solution {
             while (!stack.empty() && temperatures[i] > temperatures[stack.peek()]) {
                 int prevDay = stack.pop();
                 answer[prevDay] = i - prevDay;
+                // 
             }
             stack.push(i); // store index of previous day
             
