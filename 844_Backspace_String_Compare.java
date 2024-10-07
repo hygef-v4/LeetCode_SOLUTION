@@ -12,6 +12,7 @@ class Solution {
           s1.append(c); 
         }
       }
+  
 
       for (char c : t.toCharArray()){
         if (c == '#'){
