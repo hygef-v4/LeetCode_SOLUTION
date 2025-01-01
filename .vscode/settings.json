@@ -1,4 +1,7 @@
 {
-  "java.project.sourcePaths": ["."],
+  "java.project.sourcePaths": [
+    ".",
+    "c:\\Program Files\\Java\\jdk-17\\bin"
+  ],
   "java.project.referencedLibraries": []
 }
