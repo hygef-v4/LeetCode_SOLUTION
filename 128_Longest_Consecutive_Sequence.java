@@ -10,7 +10,7 @@ class Solution {
     int[] count = new int[nums.length];
     Arrays.fill(count, 1);
 
-    int[] newArr = Arrays.copyOf(nums, nums.length);
+    int[] newArr = Arrays.cojavaOf(nums, nums.length);
     Arrays.sort(newArr);
 
     int countIndex = 0;

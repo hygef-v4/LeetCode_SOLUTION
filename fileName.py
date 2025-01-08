@@ -4,9 +4,9 @@ def convert_to_filename(input_str):
         # Split the string into the numeric part and the rest of the filename
         components = input_str.split('_')
         # Extract the numeric part (removing the .java extension)
-        number = components[0].replace('.py', '')
+        number = components[0].replace('.java', '')
         # Extract the description part
-        description = '_'.join(components[1:]).replace('.py', '')
+        description = '_'.join(components[1:]).replace('.java', '')
     else:
         # If there is no underscore, assume it's in the format 'number. Description'
         components = input_str.replace('.', '').split(' ')
@@ -17,12 +17,12 @@ def convert_to_filename(input_str):
     number = number.zfill(3)
     
     # Join the components with underscores and add the .java extension
-    new_name = f"{number}_{description}.py"
+    new_name = f"{number}_{description}.java"
     
     return new_name
 
 # Read input from the keyboard
-input_str = input("Enter the string in the format 'number. Description' or 'number_Description.py': ")
+input_str = input("Enter the string in the format 'number. Description' or 'number_Description.java': ")
 filename = convert_to_filename(input_str)
 print("Generated filename:")
 print(filename)
